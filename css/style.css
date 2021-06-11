@@ -7,16 +7,75 @@
 }
 
 body {
+  background-color: #FBFCFC;
   font-family: 'DM Sans', sans-serif;
   color: #68707B;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0 auto;
+  width: 90vw;
 }
 
 /*======================================= 
     Main Layout
 =========================================*/
 
+ul {
+  list-style-type: none; 
+  padding: 0 1rem;
+}
 
+ul li {
+  background-color: white;
+  margin-bottom: .35rem;
+  font-size: .90em;
+  font-weight: bold;
+  padding: .5rem 0;
+}
 
+li:first-child {
+  background-color: #FBFCFC;
+  font-size: 1.5em;
+}
+
+header img {
+  width: 60vw;
+}
+
+header {
+  padding: 0 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.main-body {
+  padding: 2rem 0;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+section {
+  margin: 1.5rem 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 /*======================================= 
     Media Queries
 =========================================*/
