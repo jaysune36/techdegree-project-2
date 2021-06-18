@@ -5,78 +5,104 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  background-color: #FBFCFC;
   font-family: 'DM Sans', sans-serif;
   color: #68707B;
   text-align: center;
-  font-size: 16px;
-  width: 90vw;
-  margin: auto;
+  margin: 0;
+  font-size: 14px;
 }
-
+a {
+  text-decoration: none;
+  color: #68707B;
+}
+a:hover {
+  cursor: pointer;
+}
 img {
   margin: 0 auto;
-  width: 90vw;
+  width: 90%;
 }
 
 /*======================================= 
     Main Layout
 =========================================*/
 
+#contact, .header-container, li:first-child, .bottom-nav li{
+  background: #fafafa;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+.header-container {
+  padding-top: 1rem;
+}
 ul {
   list-style-type: none; 
   padding: 0 1rem;
+  margin-top: 0;
 }
-
 ul li {
-  background-color: white;
   margin-bottom: .35rem;
   font-size: .90em;
   font-weight: bold;
   padding: .5rem 0;
+  background-color: #fff;
 }
-
 li:first-child {
-  background-color: #FBFCFC;
-  font-size: 1.5em;
+  font-size: 1.75em;
+  padding-bottom: 1rem;
 }
-
 header img {
-  width: 60vw;
+  width: 60%;
 }
-
 header {
   padding: 0 2rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-
-.portfolio-container {
+.header-container {
+  padding-bottom: 1rem;
+}
+.portfolio-flexbox {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: #fff;
 }
-
 h1, #contact {
   padding: 1rem 0;
 }
-
 section {
   margin: 2rem 0;
 }
-
-a:hover {
-  cursor: pointer;
+.bottom-nav {
+  height: auto;
 }
-
-.footer-container {
+.bottom-nav li:first-child {
+  font-size: 1.25em;
+}
+.bottom-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.hide {
+  display: none;
+}
+
 /*======================================= 
     Media Queries
 =========================================*/
+
+@media (min-width: 768px) {
+
+  .portfolio-flexbox {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  section {
+    width: 45%;
+    max-width: 500px;
+  }
+}
