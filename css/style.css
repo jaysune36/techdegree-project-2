@@ -25,6 +25,7 @@ a:hover {
 }
 img {
   margin: 0 auto;
+  max-width: 500px;
   width: 90%;
 }
 
@@ -82,7 +83,7 @@ header img {
 #portfolio, #contact {
   padding: 2rem 0;
 }
-section {
+.col {
   margin: 2rem 0;
 }
 .bottom-nav {
@@ -133,11 +134,11 @@ section {
   }
   .portfolio-flexbox {
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
   }
   .col {
-    flex: 1 48%;
+    flex: 1 45%;
     margin: .5rem;
   }
   img {
