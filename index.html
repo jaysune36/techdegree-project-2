@@ -13,64 +13,70 @@
 
 <body>
   <div class="header-container">
-    <nav class="main-nav">
-      <div class="container">
-        <ul>
-          <li>Jason Sera</li>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#">SKILLS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </nav>
     <!-- header -->
     <header>
-      <img src="images/responsive-layout-profile.png" alt="cartoon profile shot">
-      <p>Hi! My name is Jason and I am a Front-End Developer that loves to create responseive designs with CSS. I
-        recently
-        completed the a degree in Front-End Development with Treehouse to use all of my new skills!</p>
-      <!-- /header -->
-  </div>
-  </header>
+      <div class="container">
+        <div class="nav-bar">
+        <h1>Jason Sera</h1>
+        <nav class="main-nav">
+          <ul class="top-nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        </div>
+        <div class="profile-flex">
+          <img src="images/responsive-layout-profile.png" alt="cartoon profile shot">
+          <p>Hi! My name is Jason and I am a Front-End Developer that loves to create responseive designs with CSS. I
+            recently
+            completed the a degree in Front-End Development with Treehouse to use all of my new skills!</p>
+        </div>
+        <!-- /header -->
+      </div>
+    </header>
   </div>
   <!-- main -->
   <main id="portfolio">
     <div class="container">
-      <h1>PORTFOLIO</h1>
+      <h2 class="space-portfolio">PORTFOLIO</h2>
       <div class="portfolio-flexbox">
-      <section>
-        <img src="images/portfolio-1.png" alt="website layout">
-        <h2>Marketing Page</h2>
-        <p>This project show the front page of a marketing website meant for a specific business that I am interested
-          in.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-2.png" alt="search site layout">
-        <h2>Search Page</h2>
-        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-3.png" alt="travel layout">
-        <h2>Travel App</h2>
-        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-4.png" alt="maps layout">
-        <h2>Map of Favorite Spots</h2>
-        <p>This project uses mapping apis to plot points for my favorite spot in the city for a do it yourself walking
-          tour.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-5.png" alt="photo gallery layout">
-        <h2>Photo Gallery</h2>
-        <p>This project show pictures from a recent trip to the viewer and allows them to easily navigate through
-          photos.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-6.png" alt="calculator">
-        <h2>Calculator</h2>
-        <p>Someone can enter the numbers they want, and press the big blue button to get the results.</p>
-      </section>
+        <section class="col">
+          <img src="images/portfolio-1.png" alt="website layout">
+          <h3>Marketing Page</h3>
+          <p>This project show the front page of a marketing website meant for a specific business that I am interested
+            in.</p>
+        </section>
+        <section class="col">
+          <img src="images/portfolio-2.png" alt="search site layout">
+          <h3>Search Page</h3>
+          <p>This project searches through a specific database to find information that the user is trying to look up.
+          </p>
+        </section>
+        <section class="col">
+          <img src="images/portfolio-3.png" alt="travel layout">
+          <h3>Travel App</h3>
+          <p>This project compares travel times based on different transportation methods and tells you the best one.
+          </p>
+        </section>
+        <section class="col">
+          <img src="images/portfolio-4.png" alt="maps layout">
+          <h3>Map of Favorite Spots</h3>
+          <p>This project uses mapping apis to plot points for my favorite spot in the city for a do it yourself walking
+            tour.</p>
+        </section>
+        <section class="col">
+          <img src="images/portfolio-5.png" alt="photo gallery layout">
+          <h3>Photo Gallery</h3>
+          <p>This project show pictures from a recent trip to the viewer and allows them to easily navigate through
+            photos.</p>
+        </section>
+        <section class="col">
+          <img src="images/portfolio-6.png" alt="calculator">
+          <h3>Calculator</h3>
+          <p>Someone can enter the numbers they want, and press the big blue button to get the results.</p>
+        </section>
       </div>
     </div>
     <!-- /main -->
@@ -78,20 +84,23 @@
   <!-- footer -->
   <footer id="contact">
     <div class="container">
-      <h2>CONTACT</h2>
-      <p>If you are interested in chatting or want more information about what I have been working on, I'd love to hear
-        from you!</p>
-      <p>Phone <strong>1 (123) 456-7890 </strong></p>
-      <p>Email <strong>jason.sera@testemail.com</strong></p>
+      <div class="contact-info">
+        <h2>CONTACT</h2>
+        <p class="space-around">If you are interested in chatting or want more information about what I have been
+          working on, I'd love to hear
+          from you!</p>
+        <p>Phone <strong> 1 (123) 456-7890 </strong></p>
+        <p>Email <strong> jason.sera@testemail.com</strong></p>
+      </div>
       <hr>
     </div>
-      <ul class="bottom-nav">
-        <li>Jason Sera</li>
-        <li><a href="#">BACK AT TOP</a></li>
-        <li><a href="#portfolio" class="hide">PORTFOLIO</a></li>
-        <li><a href="#" class="hide">SKILLS</a></li>
-        <li><a href="#contact" class="hide">CONTACT</a></li>
-      </ul>
+    <h3>Jason Sera</h3>
+    <ul class="bottom-nav">
+      <li><a href="#">BACK AT TOP</a></li>
+      <li><a href="#portfolio" class="hide">PORTFOLIO</a></li>
+      <li><a href="#" class="hide">SKILLS</a></li>
+      <li><a href="#contact" class="hide">CONTACT</a></li>
+    </ul>
     <!-- /footer -->
   </footer>
   <!-- /body -->
