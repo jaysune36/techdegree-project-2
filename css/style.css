@@ -13,9 +13,6 @@ body {
   font-size: 16px;
   line-height: 1.25;
 }
-h1, .contact-info h2 {
-  font-size: 16px;
-}
 a {
   text-decoration: none;
   color: #68707B;
@@ -32,8 +29,13 @@ img {
 /*======================================= 
     Main Layout
 =========================================*/
-
-#contact, .header-container, .bottom-nav li{
+h1, 
+.contact-info h2 {
+  font-size: 16px;
+}
+#contact, 
+.header-container, 
+.bottom-nav li{
   background: #fafafa;
 }
 .container {
@@ -51,16 +53,11 @@ h1 {
 .main-nav {
   margin-bottom: 3rem;
 }
-.top-nav, .bottom-nav {
+.top-nav, 
+.bottom-nav {
   list-style-type: none;
 }
-.nav-bar {
-  display: flex;
-  flex-direction: column;
-}
 .top-nav {
-  display: flex;
-  flex-direction: column;
   padding: 0 1rem;
 }
 .top-nav li {
@@ -76,10 +73,6 @@ header img {
 .space-portfolio {
   padding-bottom: 2rem;
 }
-.portfolio-flexbox {
-  display: flex;
-  flex-direction: column;
-}
 #portfolio, #contact {
   padding: 2rem 0;
 }
@@ -89,11 +82,6 @@ header img {
 .bottom-nav {
   height: auto;
 }
-.bottom-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 .space-around {
   margin: 0;
   padding: 2rem 0;
@@ -102,6 +90,25 @@ header img {
   display: none;
 }
 
+/*======================================= 
+    Flexbox
+=========================================*/
+
+.nav-bar, 
+.top-nav,
+.portfolio-flexbox,
+.bottom-nav {
+  display: flex;
+}
+.nav-bar, 
+.top-nav, 
+.portfolio-flexbox {
+  flex-direction: column;
+}
+.bottom-nav {
+  flex-direction: row;
+  justify-content: space-between;
+}
 /*======================================= 
     Media Queries
 =========================================*/
@@ -134,7 +141,7 @@ header img {
   }
   .portfolio-flexbox {
     flex-direction: row;
-    /* justify-content: space-between; */
+
     flex-wrap: wrap;
   }
   .col {
