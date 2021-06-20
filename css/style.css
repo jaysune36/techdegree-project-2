@@ -77,8 +77,14 @@ header img {
 #portfolio, #contact {
   padding: 2rem 0;
 }
+.portfolio-flexbox {
+  margin-top: 2rem;
+}
 .col {
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+.contact-info {
+  padding-bottom: 2rem;
 }
 .bottom-nav {
   height: auto;
@@ -87,7 +93,8 @@ header img {
   margin: 0;
   padding: 2rem 0;
 }
-.hide {
+.hide,
+.hide-skill {
   display: none;
 }
 
@@ -159,7 +166,6 @@ header img {
   }
   .contact-info {
     margin: 0 auto;
-    padding: 1.5rem;
     width: 70%;
   }
   .bottom-nav li {
@@ -189,5 +195,11 @@ header img {
   .col {
     flex: 1 30%;
     margin: .5rem;
+  }
+  .small-screen-sec {
+    display: none;
+  }
+  .hide-skill {
+    display: inline-block;
   }
 }
