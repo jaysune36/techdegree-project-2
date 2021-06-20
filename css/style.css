@@ -20,6 +20,9 @@ a {
 a:hover {
   cursor: pointer;
 }
+ul {
+  list-style-type: none;
+}
 img {
   margin: 0 auto;
   max-width: 500px;
@@ -30,15 +33,17 @@ img {
     Main Layout
 =========================================*/
 h1, 
-.contact-info h2 {
+.contact-info h2,
+.portfolio-banner {
   font-size: 16px;
 }
 #contact, 
 .header-container, 
-.bottom-nav li{
+.bottom-nav li {
   background: #fafafa;
 }
-.container {
+.container,
+.bottom-bar {
   margin: 0 auto;
   width: 90%;
 }
@@ -50,28 +55,24 @@ h1 {
   padding-bottom: 1rem;
   margin-bottom: 0;
 }
-.main-nav {
+.nav-bar{
   margin-bottom: 3rem;
-}
-.top-nav, 
-.bottom-nav {
-  list-style-type: none;
 }
 .top-nav {
   padding: 0 1rem;
 }
+.top-nav li,
+.bottom-nav li {
+  font-weight: bold;
+}
 .top-nav li {
   margin-bottom: .35rem;
   font-size: .90em;
-  font-weight: bold;
   padding: .5rem 0;
   background-color: #fff;
 }
 header img {
   width: 60%;
-}
-.space-portfolio {
-  padding-bottom: 2rem;
 }
 #portfolio, #contact {
   padding: 2rem 0;
@@ -82,7 +83,7 @@ header img {
 .bottom-nav {
   height: auto;
 }
-.space-around {
+.contact-p {
   margin: 0;
   padding: 2rem 0;
 }
@@ -96,25 +97,32 @@ header img {
 
 .nav-bar, 
 .top-nav,
+.profile-flex,
 .portfolio-flexbox,
+.bottom-bar,
 .bottom-nav {
   display: flex;
 }
 .nav-bar, 
 .top-nav, 
+.profile-flex,
 .portfolio-flexbox {
   flex-direction: column;
 }
-.bottom-nav {
+.bottom-bar {
   flex-direction: row;
   justify-content: space-between;
+}
+.bottom-nav {
+  align-items: center;
 }
 /*======================================= 
     Media Queries
 =========================================*/
 
 @media (min-width: 768px) {
-  .nav-bar {
+  .nav-bar,
+  .bottom-nav {
     align-items: center;
   }
   .top-nav {
@@ -127,7 +135,6 @@ header img {
     margin: 0 1rem;
   }
   .profile-flex {
-    display: flex;
     flex-direction: row-reverse;
     margin-top: 2rem;
   }
@@ -141,7 +148,6 @@ header img {
   }
   .portfolio-flexbox {
     flex-direction: row;
-
     flex-wrap: wrap;
   }
   .col {
@@ -156,11 +162,23 @@ header img {
     padding: 1.5rem;
     width: 70%;
   }
+  .bottom-nav li {
+    margin: 0 .5em;
+  }
+  .hide {
+    display: inline;
+  }
+  .bottom-nav li:first-child {
+    display: none;
+  }
 }
 @media (min-width: 1024px) {
   .nav-bar {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .main-nav {
+    margin-bottom: 0;
   }
   .top-nav {
     width: 100%;
