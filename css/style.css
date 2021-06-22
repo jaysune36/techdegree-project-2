@@ -19,6 +19,7 @@ a {
 }
 a:hover {
   cursor: pointer;
+  color: #0000FF
 }
 ul {
   list-style-type: none;
@@ -27,6 +28,7 @@ img {
   margin: 0 auto;
   max-width: 500px;
   width: 90%;
+  height: 55%;
 }
 
 /*======================================= 
@@ -34,7 +36,8 @@ img {
 =========================================*/
 h1, 
 .contact-info h2,
-.portfolio-banner {
+.portfolio-banner,
+.skills-banner {
   font-size: 16px;
 }
 #contact, 
@@ -83,6 +86,13 @@ header img {
 .col {
   margin: 1rem 0;
 }
+.col:hover {
+  cursor: pointer;
+  opacity: .5;
+  border-top: 3px solid #0000FF;
+  border-bottom: 3px solid #0000FF;
+  border-radius: 5px;
+}
 .contact-info {
   padding-bottom: 2rem;
 }
@@ -106,6 +116,7 @@ header img {
 .top-nav,
 .profile-flex,
 .portfolio-flexbox,
+.skills-banner,
 .bottom-bar,
 .bottom-nav {
   display: flex;
@@ -113,7 +124,8 @@ header img {
 .nav-bar, 
 .top-nav, 
 .profile-flex,
-.portfolio-flexbox {
+.portfolio-flexbox,
+.skills-flexbox {
   flex-direction: column;
 }
 .bottom-bar {
@@ -153,7 +165,8 @@ header img {
   header img {
     width: 40%;
   }
-  .portfolio-flexbox {
+  .portfolio-flexbox,
+  .skills-flexbox {
     flex-direction: row;
     flex-wrap: wrap;
   }
